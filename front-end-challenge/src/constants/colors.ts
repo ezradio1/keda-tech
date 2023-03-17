@@ -1,0 +1,12 @@
+export const PRIMARY = '#0FBBFB'
+export const RED = '#ED4C5C'
+export const ORANGE = '#F8A541'
+export const TOSCA = '#00A790'
+export const PURPLE = '#8942C1'
+
+export const NN0 = '#FFFFFF'
+export const NN50 = '#ebebeb'
+export const NN100 = '#98999f'
+export const NN200 = '#30323d'
+export const NN300 = '#888888'
+export const NN400 = '#4A4A4A'
