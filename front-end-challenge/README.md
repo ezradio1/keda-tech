@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# keDA Technology
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a project showcasing the use of React JS 18.2 + Typescript, ANT Design, and Emotion CSS.
 
-## Available Scripts
+Tech Stack
+1. React JS 18.2
+2. Typescript
+3. ANT Design
+4. Emotion CSS
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+This project is a basic React application that uses Typescript for static typing, ANT Design for pre-built UI components, and Emotion CSS for styling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+React is a popular JavaScript library for building user interfaces, and with the release of React 18.2, it has become even more powerful. Typescript adds static typing to the project, which helps to catch errors at compile time and improves maintainability.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ANT Design is a widely used UI library that provides a set of pre-built components, making it easy to create responsive and aesthetically pleasing interfaces. It also has a built-in theme system that allows for easy customization.
 
-### `npm test`
+Emotion CSS is a library that allows for styling components using CSS-in-JS. This approach has several benefits over traditional CSS, such as better scoping, dynamic styles, and improved performance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## How to Run the Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install the dependencies.
+4. Run `npm start` to start the development server.
+5. Open http://localhost:3000 in your browser to view the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Conclusion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project demonstrates the power of React, Typescript, ANT Design, and Emotion CSS in creating modern web applications. By leveraging these technologies, developers can build applications that are scalable, maintainable, and aesthetically pleasing.
