@@ -1,6 +1,6 @@
 # keDA Technology
 
-This is a project showcasing the use of React JS 18.2 + Typescript, ANT Design, and Emotion CSS. You can also access this project at `https://keda-tech.netlify.app/`
+This is a project showcasing the use of React JS 18.2 + Typescript, ANT Design, and Emotion CSS. You can also access this project at [link](https://keda-tech.netlify.app/)
 
 Tech Stack
 1. React JS 18.2
