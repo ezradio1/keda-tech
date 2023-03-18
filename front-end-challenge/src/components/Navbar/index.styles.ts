@@ -2,6 +2,39 @@ import { css } from '@emotion/css'
 import { BACKGROUND_TEXTURE } from 'constants/background'
 import { NN0 } from 'constants/colors'
 
+const slideTransition = (isShow: boolean) => css`
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slide-in 0.75s ease-out forwards;
+
+  ${!isShow &&
+  `
+    animation: slide-out 0.75s ease-out forwards;
+  `}
+
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    to {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+`
 export const wrapper = (showShadow: boolean) => css`
   background-image: url(${BACKGROUND_TEXTURE});
   position: fixed;
@@ -13,7 +46,7 @@ export const wrapper = (showShadow: boolean) => css`
   ${showShadow &&
   `
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    `}
+  `}
 `
 
 export const container = css`
@@ -22,13 +55,11 @@ export const container = css`
   }
 `
 
-export const wave = css`
+export const wave = (isScroll: boolean) => css`
   width: 35%;
   position: absolute;
   z-index: -1;
-  opacity: 0;
-  transform: translateY(-100%);
-  animation: slide-in 1s ease-out forwards;
+  ${slideTransition(!isScroll)}
 
   @media all and (max-width: 768px) {
     width: 55%;
@@ -36,32 +67,16 @@ export const wave = css`
   @media all and (max-width: 480px) {
     width: 75%;
   }
-
-  @keyframes slide-in {
-    from {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 `
-export const logoWrapper = css``
-export const logo = css`
+export const logo = (isShow: boolean) => css`
   width: 128px;
-  opacity: 0;
-  animation: fade-in 0.5s ease-in-out 0.75s forwards;
+  ${slideTransition(isShow)}
+`
 
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+export const logoPrimary = (isShow: boolean) => css`
+  position: absolute;
+  width: 128px;
+  ${slideTransition(isShow)}
 `
 export const menu = css`
 list-style: none;
